@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+/* NAVBAR */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #00bfff;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 120px 10%;
+}
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #141e30,
+        #243b55
+    );
+}
+
+.hero h1 {
+    font-size: 4rem;
+}
+
+.hero h2 {
+    margin-top: 10px;
+    color: #00bfff;
+}
+
+.hero p {
+    margin-top: 20px;
+    max-width: 700px;
+}
+
+/* BOUTON */
+
+.btn {
+    margin-top: 30px;
+    display: inline-block;
+    width: fit-content;
+
+    padding: 15px 25px;
+
+    background: #00bfff;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* PROJETS */
+
+.project-card {
+    margin-top: 40px;
+
+    display: flex;
+    gap: 30px;
+
+    background: #1c1c1c;
+
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.project-card video {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.project-info {
+    flex: 1;
+}
+
+/* COMPETENCES */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* FORMULAIRE */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    background: #00bfff;
+    color: white;
+
+    border: none;
+    padding: 15px;
+
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #000;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-card video {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
